@@ -1,0 +1,16 @@
+{
+  "name": "verdict-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Evidence-grounded verification pipeline backend for Verdict",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test:pipeline": "node pipeline.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  }
+}

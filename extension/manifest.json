@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "Verdict",
+  "version": "1.1",
+  "description": "Evidence-grounded claim and deepfake verification with cited web sources.",
+  "permissions": [
+    "contextMenus",
+    "sidePanel",
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://YOUR-BACKEND.vercel.app/*",
+    "http://localhost:3000/*"
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "action": {
+    "default_title": "Verdict",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  }
+}

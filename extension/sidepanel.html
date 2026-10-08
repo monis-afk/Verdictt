@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verdict</title>
+  <link rel="stylesheet" href="sidepanel.css">
+</head>
+<body>
+  <div class="header">
+    <span class="logo">⚖️ Verdict</span>
+    <span class="sub">Evidence-Grounded Engine</span>
+  </div>
+
+  <textarea id="input" placeholder="Paste a claim or press Ctrl+V to paste screenshot…"></textarea>
+
+  <div class="button-row">
+    <button id="go">Verify</button>
+    <label for="imgUpload" class="img-btn" title="Upload image or screenshot">📷</label>
+    <input type="file" id="imgUpload" accept="image/*">
+  </div>
+
+  <div id="imagePreviewContainer" class="hidden">
+    <img id="imagePreview" alt="Selected Preview">
+    <button id="clearImage" title="Remove image">✕</button>
+  </div>
+
+  <div id="out"></div>
+
+  <script src="sidepanel.js"></script>
+</body>
+</html>
